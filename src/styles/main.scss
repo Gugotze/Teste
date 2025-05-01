@@ -1,33 +1,68 @@
-@use 'hero';
-@use 'content';
+@use 'header';
+@use 'timer';
+@use 'event';
+@use '_variables';
 
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    color: white;
+@font-face{
+    font-family: 'Action_comic';
+    src: url("../../assets/fonts/Action\ Comics.ttf");
 }
 
-body {
-    background-image: url(../images/fundo.jfif);
-    background-size: cover;
-    background-repeat: no-repeat;
-    position: relative;
+@font-face{
+    font-family: 'Action_comic_black';
+    src: url("../../assets/fonts/Action\ Comics\ Black.ttf");
+}
 
-    &::before {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: black;
-        content: '';
-        opacity: .8;
+@font-face{
+    font-family: 'Avenir';
+    src: url("../../assets/fonts/Avenir-Regular.woff2");
+}
+
+@font-face{
+    font-family: 'Avenir-bold';
+    src: url("../../assets/fonts/Avenir-Bold.woff2");
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+body{
+    padding-bottom: 98px;
+    background-color: variables.$corSecundary;
+    overflow-x: hidden;
+    @media(max-width:640px){
+        padding-bottom: 92px;
     }
 }
 
-.container {
+.container{
     max-width: 1024px;
-    margin: 0 auto;
     width: 100%;
+    margin: 0 auto;
+    position: relative;
+
+    @media(max-width:640px){
+        max-width: 80%;
+    }
+
+    @media(max-width:1024px){
+        max-width: 90%;
+    }
+}
+
+.button{
+    padding: 16px;
+    font-family: variables.$fontPrincipal;
+    font-weight: bold;
+    font-size: 18px;
+    color: variables.$corTertiary;
+    background-color: variables.$corPrimary;
+    text-decoration: none;
+    text-transform: uppercase ;
+    border: 1px solid variables.$corPrimary;
+    border-radius: 4px;
 }
