@@ -1,89 +1,50 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EBAC Tech Talks</title>
-
+    <title>Meu aniversário</title>
+    <link rel="stylesheet" href="./styles/main.scss">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/main.scss">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Bonheur+Royale&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="hero">
         <div class="container">
-            <img class ="hero__logo" src="images/ebac_logo.svg" alt="">
+            <h1 class="hero__title">Aniversário do Nikão</h1>
             <p class="hero__text">
-                O maior evento de tecnologia do Brasil começa em <span id="contador"></span>
+                Faltam apenas<br><span id="contador"></span><br>para o meu aniversário de 22 anos!
             </p>
-            <div class="infos-bar">
-                <ul class="infos-bar__infos">
-                    <li class="infos-bar__infos__item">
-                        <b>Localização</b>
-                        Allianz Parque - Barra Funda - São Paulo
-                    </li>
-                    <li class="infos-bar__infos__item">
-                        <b>Preço</b>
-                        A partir de R$ 120,00
-                    </li>
-                    <li class="infos-bar__infos__item">
-                        <b>Quando</b>
-                        12/12/2025 às 19hrs
-                    </li>
-                </ul>
-                <a href="#" class="button button--primary">
-                    Garanta sua vaga
-                </a>
-            </div>
         </div>
     </header>
-    <section class="event event--frontend">
-        <div class="container" data-aos="fade-right">
-            <div class="event__details">
-                <h2 class="event__details__title">Front-End</h2>
-                <p class="event__details__description">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur error doloribus maxime, possimus nemo, rem voluptatum illo expedita facere molestias ipsum minus perferendis, ex ut laboriosam libero dolor rerum totam!
+
+    <section class="content">
+        <div class="container">
+            <img class="content__image" src="./images/IMG_20231226_193458.jpg" alt="" data-aos="fade-right" data-aos-duration="2000">
+            <div class="content__text" data-aos="fade-left" data-aos-duration="2000">
+                <h2 class="content__title">- Sobre o aniversário -</h2>
+                <p>
+                    Aproveitando o embalo do curso que estou fazendo de <i>Engenheiro Front-End</i>, venho por meio desta <i>Landing Page</i> te convidar para minha festa de aniversário, que será no dia 04 de novembro, quando completarei 22 anos.
+                </p>
+                <p>
+                    Será pedido apenas uma colaboração da parte de cada convidado de apenas 20 reais para a compra de bebidas, carnes, salgados, doces e decoração do espaço.
+                </p>
+                <p>
+                    Não é pedindo, mas quem quiser dar um presentinho vai me deixar muito felizão kkkkkkkkk brincadeira galera, tmj é nozes!
+                </p>
+                <p>
+                    Aguardo a presença de todos vocês!
+                </p>
+                <p>
+                    Dev: Nícolas José Silva Souza
                 </p>
             </div>
-            <img class="event__image" src="images/frontend.png" alt="Front-End">
         </div>
     </section>
-    <section class="event event--ui-ux event--image-left">
-        <div class="container" data-aos="fade-left">
-            <div class="event__details">
-                <h2 class="event__details__title">UI/UX</h2>
-                <p class="event__details__description">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur error doloribus maxime, possimus nemo, rem voluptatum illo expedita facere molestias ipsum minus perferendis, ex ut laboriosam libero dolor rerum totam!
-                </p>
-            </div>
-            <img class="event__image" src="images/ui-ux.png" alt="Front-End">
-        </div>
-    </section>
-    <section class="event event--data-science">
-        <div class="container"  data-aos="fade-right">
-            <div class="event__details">
-                <h2 class="event__details__title">Data Science</h2>
-                <p class="event__details__description">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur error doloribus maxime, possimus nemo, rem voluptatum illo expedita facere molestias ipsum minus perferendis, ex ut laboriosam libero dolor rerum totam!
-                </p>
-            </div>
-            <img class="event__image" src="images/data.png" alt="Front-End">
-        </div>
-    </section>
-    <section class="event event--backend event--image-left">
-        <div class="container" data-aos="fade-left">
-            <div class="event__details">
-                <h2 class="event__details__title">Back-End</h2>
-                <p class="event__details__description">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur error doloribus maxime, possimus nemo, rem voluptatum illo expedita facere molestias ipsum minus perferendis, ex ut laboriosam libero dolor rerum totam!
-                </p>
-            </div>
-            <img class="event__image" src="images/backend.png" alt="Front-End">
-        </div>
-    </section>
+
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script src="scripts/main.js"></script>
+    <script src="./scripts/main.js"></script>
 </body>
 </html>
